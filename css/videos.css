@@ -1,0 +1,19 @@
+body
+{
+	background-image: url("../images/videos_background.jpg");
+	background-position: center top;
+	background-attachment: fixed;
+}
+
+#articles
+{
+	margin-left: 22%;
+	margin-right: 22%;
+}
+
+iframe
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,10 @@
+body
+{
+	background-image: url("../images/destruction_background.jpg");
+	background-attachment: fixed;
+}
+
+header
+{
+	color: #ff0000;
+}

@@ -1,0 +1,16 @@
+body
+{
+	background-image: url("../images/index_background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.green_new
+{
+	color: #7FFF00;
+}
+
+#professions p
+{
+	margin-left: 2em;
+}

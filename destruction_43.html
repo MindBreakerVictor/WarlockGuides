@@ -71,47 +71,344 @@
 		<div id="articles">
 			<article id="talents">
 				<h2>Talents</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<img src="images/destruction_talents.png" alt="Couldn't load the image.">
+				<p>In-game code pentru completarea automata a talentelor:</p>
+				<table class="center_table code">
+					<tr>
+						<td>/run t,p,a={3,13,23,32,52,72,83,91,102,112,131,143,151,162,172,181,191,1,33,2,23,32,52,}SetPreviewPrimaryTalentTree(t[1],GetActiveTalentGroup())for i=1,#t do a=t[i]if a<9 then p=a else AddPreviewTalentPoints(p,floor(a/10),a%10)end end</td>
+					</tr>
+				</table>
 			</article>
 			
 			<article id="glyphs">
 				<h2>Glyphs</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<img class="center_image" src="images/destruction_glyphs.png" alt="Couldn't load the image.">
+				<h4 class="glyphs_headings"><img src="images/gifs/inv_glyph_primewarlock.jpg" alt="Couldn't load image.">Prime Glyphs:</h4>
+				<ul class="glyphs_ul"> 
+					<li><a href="http://wowhead.com/item=42465">Glyph of Imp</a> - mareste damageul dat de Imp's<img src="images/gifs/spell_fire_firebolt.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/cata_spells.php?spell=3110&name=firebolt">Firebolt</a> cu 20%.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42464&name=glyph-of-immolate">Glyph of Immolate</a> - mareste damage-ul periodic si direct de la <img src="images/gifs/spell_fire_immolation.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Immolate</a> cu 10%.</li>
+					<li><a href="http://wowhead.com/item=42454">Glyph of Conflagrate</a> - scade cooldown-ul la <img src="images/gifs/spell_fire_fireball.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=17962&name=conflagrate">Conflagrate</a> cu 2 secunde.</li>
+				</ul>
+				<h4 class="glyphs_headings"><img src="images/gifs/inv_glyph_majorwarlock.jpg" alt="Couldn't load image.">Major Glyphs:</h4>
+				<ul class="glyphs_ul">
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42462&name=glyph-of-healthstone">Glyph of Healthstone</a> - mareste healing-ul primit din <img src="images/gifs/inv_stone_04.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=36894&name=fel-healthstone">Healthstone</a> cu 30%.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=45785&name=glyph-of-life-tap">Glyph of Life Tap</a> - reduce global cooldownul la <img src="images/gifs/spell_shadow_burningspirit.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1454&name=life-tap">Life Tap</a> cu 0.5 secunde.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42467&name=glyph-of-shadow-bolt">Glyph of Soulstone</a> - mareste hp-ul cu care este reinviat player-ul de <img src="images/gifs/inv_misc_orb_04.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=5232&name=soulstone">Soulstone</a> cu 40%, un must de cand <img src="images/gifs/inv_misc_orb_04.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=5232&name=soulstone">Soulstone</a> a devenit un combat ress.</li>
+				</ul>
+				<h4 class="glyphs_headings"><img src="images/gifs/inv_glyph_minorwarlock.jpg" alt="Couldn't load image.">Minor Glyphs:</h4>
+				<ul class="glyphs_ul">
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=43389&name=glyph-of-unending-breath">Glyph of Unending Breath</a> - mareste swim speedul cu 20% pe toti care au <img src="images/gifs/spell_shadow_demonbreath.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=5697&name=unending-breath">Unending Breath</a>.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=43394&name=glyph-of-ritual-of-souls">Glyph of Ritual of Souls</a> - reduce mana folosita de <img src="images/gifs/spell_shadow_shadesofdarkness.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29893&name=ritual-of-souls">Ritual of Souls</a> cu 70%.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=43390&name=glyph-of-drain-soul">Glyph of Drain Soul</a> - va da 10% din total mana dupa ce omorati un target care da experienta sau honor cu <img src="images/gifs/spell_shadow_haunting.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1120&name=drain-soul">Drain Soul</a>.</li>
+				</ul>
+				<p><span id="glyphs_note">NOTE:</span> Glyphele minore sunt optionale!</p>
 			</article>
 			
 			<article id="stats">
 				<h2>Stats</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<p>Haste-ul este un stat important deoarece din Cataclysm nu numai ca reduce global cooldown si casting time-ul la spells ca si pana acuma, dar inloc sa micsoreze timpu dintre tick-uri astfel micsorand durata dot-urilor adauga un extra tick la dot-uri la anumite procente cea ce inseamna un plus de damage in acelas numar de secunde.</p>
+				<p id="haste_rating" class="center_text">1% Haste = 128.05701 Haste rating</p>
+				<p class="center_text"><img src="images/gifs/spell_fire_immolation.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Immolate</a></p>
+				<img class="center_image" src="images/immolate_haste_bp.png" alt="Couldn't load image.">
+				<p class="center_text"><img src="images/gifs/spell_shadow_abominationexplosion.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=172&name=corruption">Corruption</a></p>
+				<img class="center_image" src="images/corruption_haste_bp.png" alt="Couldn't load image.">
+				<p class="center_text"><img src="images/gifs/ability_warlock_shadowflame.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Shadowflame</a></p>
+				<img class="center_image" src="images/shadowflame_haste_bp.png" alt="Couldn't load image.">
+				<p>Aceste valori sunt atinse raid buffed(<img src="images/gifs/spell_warlock_focusshadow.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=80398&name=dark-intent">Dark Intent</a> + <img src="images/gifs/spell_nature_moonglow.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=24907&name=moonkin-aura">Moonkin Aura</a>/<img src="images/gifs/spell_shadow_spectralsight.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=49868&name=mind-quickening">Mind Quickening</a>/<img src="images/gifs/spell_shaman_elementaloath.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=51470&name=elemental-oath">Elemental Oath</a>/<img src="images/gifs/spell_nature_slowingtotem.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=3738&name=wrath-of-air-totem">Wrath of Air Totem</a>), iar unele din ele sunt chiar imposibil de atins.</p>
+				<p>Intelect>HitCap(17%)>Haste>Crit>Mastery</p>
 			</article>
 			
 			<article id="reforging">
 				<h2>Reforging</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<p>Reforging-ul este un nou sistem adaugat in expansionul Cataclysm. Acest sistem va permite sa transformati 40% din unul din stat-urile secundare (crit, mastery, hit, dodge, parry, expertise, haste, spirit) de pe un item intr-un altul care este mai benific clasei si specului dumneavoastra. Reforging-ul se poate face la <a href="http://www.wowhead.com/npc=54471/thaumaturge-zajir">Thaumaturge Zajir(Horde)</a>/<a href="http://www.wowhead.com/npc=54441">Thaumaturge Vashreen(Alliance)</a>. Atentie reforging nu se poate da intr-un stat care este deja pe item.</p>
+				<p>First of all trebuie sa aveti Hit cap(17%=1742 Hit Rating).</p>
+				<ul>
+					<li>Crit & Mastery = Mastery->Haste</li>
+					<li>Crit & Hit = Crit->Haste</li>
+					<li>Haste & Mastery = Mastery->Crit</li>
+					<li>Mastery & Hit = Mastery->Haste</li>
+				</ul>
 			</article>
 			
 			<article id="gear">
 				<h2>Gear</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<table class="center_table gear_table">
+					<tr>
+						<th colspan="4">Best in Slot</th>
+					</tr>
+					<tr>
+						<th>Slot</th>
+						<th>Name</th>
+						<th>Gemming</th>
+						<th>Reforging</th>
+					</tr>
+					<tr>
+						<td>Head</td>
+						<td><img src="images/gifs/inv_helmet_robe_raidwarlock_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78702&name=hood-of-the-faceless-shroud">Hood of the Faceless Shroud</a></td>
+						<td>1x<img src="images/gifs/inv_misc_metagem_b.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=68780">Burning Shadowspirit Diamond</a> + 1x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Crit->Hit</td>
+					</tr>
+					<tr>
+						<td>Neck</td>
+						<td><img src="images/gifs/inv_misc_necklace_16.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=77088/opal-of-the-secret-order">Opal of the Secret Order</a></td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Shoulders</td>
+						<td><img src="images/gifs/inv_shoulder_robe_raidwarlock_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78749&name=mantle-of-the-faceless-shroud">Mantle of the Faceless Shroud</a></td>
+						<td>2x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Mastery->Haste</td>
+					</tr>
+					<tr>
+						<td>Back</td>
+						<td><img src="images/gifs/inv_misc_cape_deathwingraid_d_03.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=77098&name=nanoprecise-cape">Nanoprecise Cape</a></td>
+						<td>1x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Mastery->Haste</td>
+					</tr>
+					<tr>
+						<td>Chest</td>
+						<td><img src="images/gifs/inv_chest_robe_raidwarlock_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78730&name=robes-of-the-faceless-shroud">Robes of the Faceless Shroud</a></td>
+						<td>2x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a> + 1x<img src="images/gifs/inv_misc_epicgem_04.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71854">Artful Lava Coral</a></td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Wrists</td>
+						<td><img src="images/gifs/inv_bracer_robe_raidwarlock_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78417&name=bracers-of-the-banished">Bracers of the Banished</a></td>
+						<td>1x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Mastery->Hit</td>
+					</tr>
+					<tr>
+						<td>Hands</td>
+						<td><img src="images/gifs/inv_gauntlet_pants_robe_raidpriest_k_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=78461">Gloves of Liquid Smoke</a></td>
+						<td>2x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Crit->Hit</td>
+					</tr>
+					<tr>
+						<td>Waist</td>
+						<td><img src="images/gifs/inv_belt_robe_raidmage_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78391&name=cord-of-the-slain-champion">Cord of the Slain Champion</a></td>
+						<td>3x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Crit->Hit</td>
+					</tr>
+					<tr>
+						<td>Legs</td>
+						<td><img src="images/gifs/inv_pants_robe_raidwarlock_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78721&name=leggings-of-the-faceless-shroud">Leggings of the Faceless Shroud</a></td>
+						<td>2x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a> + 1x<img src="images/gifs/inv_misc_epicgem_04.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71854">Artful Lava Coral</a></td>
+						<td>Mastery->Hit</td>
+					</tr>
+					<tr>
+						<td>Boots</td>
+						<td><img src="images/gifs/inv_boots_robe_raidwarlock_k_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78449&name=janglespur-jackboots">Janglespur Jackboots</a></td>
+						<td>2x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Crit->Hit</td>
+					</tr>
+					<tr>
+						<td>Ring 1</td>
+						<td><img src="images/gifs/inv_jewelry_ring_88.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78490&name=infinite-loop">Infinite Loop</a></td>
+						<td>1x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Crit->Haste</td>
+					</tr>
+					<tr>
+						<td>Ring 2</td>
+						<td><img src="images/gifs/inv_jewelry_ring_102.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78419&name=ring-of-the-riven">Ring of the Riven</a></td>
+						<td>1x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>Mastery->Hit</td>
+					</tr>
+					<tr>
+						<td>Trinket 1</td>
+						<td><img src="images/gifs/inv_misc_stonetablet_04.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=77995&name=will-of-unbinding">Will of Unbinding</a></td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Trinket 2</td>
+						<td><img src="images/gifs/inv_misc_coin_09.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78000&name=cunning-of-the-cruel">Cunning of the Cruel</a>(AoE)/<img src="images/gifs/inv_bijou_purple.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=77991">Insignia of the Corrupted Mind</a>(Single Target)</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Weapon</td>
+						<td><img src="images/gifs/stave_2h_tarecgosa_e_01stagefinal.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=71086&name=dragonwrath-tarecgosa-s-rest">Dragonwrath, Tarecgosa's Rest</a>/<img src="images/gifs/inv_stave_2h_deathwingraid_d_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78418&name=lightning-rod">Lightning Rod</a></td>
+						<td>3x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a>/1x<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Wand</td>
+						<td><img src="images/gifs/inv_wand_1h_deathwingraid_d_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=78392&name=finger-of-zon-ozz">Finger of Zon'ozz</a></td>
+						<td>N/A</td>
+						<td>Mastery->Hit</td>
+					</tr>
+				</table>
+				<br>
+				<table class="center_table gear_table">
+					<tr>
+						<th colspan="2" class="table_title">Pre Raid Best in Slot</th>
+					</tr>
+					<tr>
+						<th>Slot</th>
+						<th>Name</th>
+					</tr>
+					<tr>
+						<td>Head</td>
+						<td><img src="images/gifs/inv_helm_robe_dungeonrobe_c_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=72839">Cowl of Highborne Sorcerors</a></td>
+					</tr>
+					<tr>
+						<td>Neck</td>
+						<td><img src="images/gifs/inv_misc_forestnecklace.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=67130">Dorian's Lost Necklace</a></td>
+					</tr>
+					<tr>
+						<td>Shoulders</td>
+						<td><img src="images/gifs/inv_shoulder_robe_dungeonrobe_c_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=72865">Mantle of False Virtue</a></td>
+					</tr>
+					<tr>
+						<td>Back</td>
+						<td><img src="images/gifs/inv_cape_430dungeon_c_04.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=67131">Drapes of the Dragonshrine</a></td>
+					</tr>
+					<tr>
+						<td>Chest</td>
+						<td><img src="images/gifs/inv_chest_robe_raidwarlock_j_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71284">Balespider's Robes</a></td>
+					</tr>
+					<tr>
+						<td>Wrists</td>
+						<td><img src="images/gifs/inv_bracer_04.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=60211">Bracers of the Dark Pool</a></td>
+					</tr>
+					<tr>
+						<td>Hands</td>
+						<td><img src="images/gifs/inv_glove_robe_raidwarlock_j_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71281">Balespider's Handwraps</a></td>
+					</tr>
+					<tr>
+						<td>Waist</td>
+						<td><img src="images/gifs/inv_belt_robe_dungeonrobe_c_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=72851">Chillbane Belt</a></td>
+					</tr>
+					<tr>
+						<td>Legs</td>
+						<td><img src="images/gifs/inv_pants_robe_dungeonrobe_c_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=72802">Time Traveler's Leggings</a></td>
+					</tr>
+					<tr>
+						<td>Boots</td>
+						<td><img src="images/gifs/inv_boots_robe_dungeonrobe_c_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=72836">Slippers of Wizardy</a></td>
+					</tr>
+					<tr>
+						<td>Ring 1</td>
+						<td><img src="images/gifs/inv_jewelry_ring_firelandsraid_01b.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71210">Crystalline Brimstone Ring</a></td>
+					</tr>
+					<tr>
+						<td>Ring 2</td>
+						<td><img src="images/gifs/inv_misc_diamondring1.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=58188">Band of Secret Names</a></td>
+					</tr>
+					<tr>
+						<td>Trinket 1</td>
+						<td><img src="images/gifs/spell_fire_rune.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=68998">Rune of Zeth</a></td>
+					</tr>
+					<tr>
+						<td>Trinket 2</td>
+						<td><img src="images/gifs/inv_misc_branch_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=62740">Stump of Time</a></td>
+					</tr>
+					<tr>
+						<td>Weapon</td>
+						<td><img src="images/gifs/inv_sword_1h_bwdraid_d_02.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=59463/maldos-sword-cane">Maldo's Sword Cane</a></td>
+					</tr>
+					<tr>
+						<td>Off-Hand</td>
+						<td><img src="images/gifs/inv_offhand_1h_430nightelf_c_01.gif" alt="Couldn't load the image."><a href="http://www.wowhead.com/item=72829">Orb of the First Satyrs</a></td>
+					</tr>
+					<tr>
+						<td>Wand</td>
+						<td><img src="images/gifs/inv_wand_1h_firelandsraid_d_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71151">Trail of Embers</a></td>
+					</tr>
+				</table>
+				<br>
+				<br>
 			</article>
 			
 			<article id="enchants">
 				<h2>Enchants</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<ul>
+					<li>Head: <img src="images/gifs/spell_fire_masterofelements.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=62367">Arcanum of Hyjal</a></li>
+					<li>Shoulders: <img src="images/gifs/inv_misc_mastersinscription.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=86403&name=felfire-inscription">Felfire Inscription</a> daca aveti Inscription, altfel <img src="images/gifs/inv_misc_gem_bloodstone_02.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=62343">Greater Inscription of Charged Lodestone</a></li>
+					<li>Back: <img src="images/gifs/inv_misc_thread_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=75172&name=lightweave-embroidery">Lightweave Embroidery</a> daca aveti Tailoring, altfel <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74240&name=enchant-cloak-greater-intellect">Enchant Cloak - Greater Intellect</a></li>
+					<li>Chest: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74250&name=enchant-chest-peerless-stats">Enchant Chest - Peerless Stats</a></li>
+					<li>Wrists: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=96262&name=enchant-bracer-mighty-intellect">Enchant Bracer - Mighty Intellect</a></li>
+					<li>Hands: <img src="images/gifs/trade_engineering.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=82175&name=synapse-springs">Synapse Springs</a> daca aveti Engineering, altfel <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=52749">Enchant Gloves - Haste</a>.</li>
+					<li>Waist: <img src="images/gifs/inv_belt_83.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=55054">Ebonsteel Belt Buckle</a></li>
+					<li>Legs: <img src="images/gifs/inv_misc_thread_eternium.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=54448">Powerful Enchanted Spellthread</a></li>
+					<li>Feet: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=52750">Enchant Boots - Haste</a></li>
+					<li>Rings: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74217&name=enchant-ring-intellect">Enchant Ring - Intellect</a> daca aveti enchanting.</li>
+					<li>Weapon: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74242&name=enchant-weapon-power-torrent">Enchant Weapon - Power Torrent</a></li>
+					<li>Off-Hand: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74235&name=enchant-off-hand-superior-intellect">Enchant Off-Hand - Superior Intellect</a></li>
+				</ul>
 			</article>
 			
 			<article id="sockets">
 				<h2>Sockets</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<ul>
+					<li><img src="images/gifs/UI-EmptySocket-Meta.png" alt="Couldn't load image.">Meta:		<img src="images/gifs/inv_misc_metagem_b.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=68780">Burning Shadowspirit Diamond</a></li>
+					<li><img src="images/gifs/UI-EmptySocket-Red.png" alt="Couldn't load image.">Red:		<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></li>
+					<li><img src="images/gifs/UI-EmptySocket-Yellow.png" alt="Couldn't load image.">Yellow:	<img src="images/gifs/inv_misc_epicgem_04.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71850">Reckless Lava Coral</a></li>
+					<li><img src="images/gifs/UI-EmptySocket-Blue.png" alt="Couldn't load image.">Blue:		<img src="images/gifs/inv_misc_epicgem_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71864">Veiled Shadow Spinel</a></li>
+				</ul>
 			</article>
 			
 			<article id="macros">
 				<h2>Macros</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<ul>
+					<li>Healthstone increased healing</li>
+					<table class="code">
+						<tr>
+							<td>#showtooltip Healthstone<br>/castsequence Demon Armor, Healthstone, Fel Armor</td>
+						</tr>
+					</table>
+					<li>Felhunter Spell Lock</li>
+					<table class="code">
+						<tr>
+							<td>/cast [pet:felhunter, target=focus, exists] Spell Lock; [pet:felhunter] Spell Lock</td>
+						</tr>
+					</table>
+					<li>Demonic Circle</li>
+					<table class="code">
+						<tr>
+							<td>#showtoolpit Demonic Circle:Teleport<br>/cast [mod:shift] Demonic Circle:Summon; [nomod] Demonic Circle:Teleport</td>
+						</tr>
+					</table>
+					<li>Soulburn + Soul Fire</li>
+					<table class="code">
+						<tr>
+							<td>#showtooltip<br>/castsequence reset=2 Soulburn, Soul Fire<br>/cast [@pettarget] Firebolt</td>
+						</tr>
+					</table>
+				</ul>
 			</article>
 			
 			<article id="rc">
 				<h2>Rotations & Cooldowns</h2>
 				<p class="center_text" style="color: green">Comming Soon!</p>
+				<!--
+				<p>Warlock-ul pe toate specurile nu este o clasa cu o rotatie fixa. Este o clasa se bazeaza pe cooldown-uri si prioritati.</p>
+				<p><img src="images/gifs/warlock_curse_shadow.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1490&name=curse-of-the-elements">Curse of the Elements</a> - acest debuff trebuie sa fie mereu pe boss atat timp cat nu aveti un Balance Druid sau alta clasa care pune debuff de 8% magic damage taken increased.</p>
+				<p><img src="images/gifs/spell_shadow_auraofdarkness.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=603&name=bane-of-doom">Bane of Doom</a> - acest DoT de durata trebui sa fie mereu pe target. Da un damage foarte mare la fiecare 15 secunde timp de 1 minut. Este destul de usor sa il ai in observatia deoarece durata lui este foarte mare. Atentie nu isi are rostul daca targetul nu sta mai mult de 1 minut in viata. Folositi Bane of Agony daca targetul nu este un boss sau o elita care sa solicite mai mult de 1 min de combat.</p>
+				<p><img src="images/gifs/spell_shadow_abominationexplosion.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=172&name=corruption">Corruption</a> - acest DoT are o durata de 18 secunde si trebuie sa fie mereu pe target. Damage-ul lui este marit cu cat ai mai mult haste datorita extra tick-urilor.</p>
+				<p><img src="images/gifs/spell_fire_immolation.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Immolate</a> - acest fire DoT este la fel ca si Corruption-ul decat ca este de natura fire si el mai mareste si damageul dat cu Incinerate cat timp este pe target.</p>
+				<p><img src="images/gifs/spell_fire_burnout.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29722&name=incinerate">Incinerate</a> - aceasta vraja ESTE FILLER-UL la Demonology Warlock din 4.3!</p>
+				<p><img src="images/gifs/spell_shadow_shadowbolt.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=686&name=shadow-bolt">Shadow Bolt</a> - la fel ca <img src="images/gifs/spell_fire_burnout.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29722&name=incinerate">Incinerate</a>, un filler daca jucati la <img src="images/gifs/spell_shadow_shadowbolt.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=686&name=shadow-bolt">Shadow Bolt</a> spec, decat ca damageul lui nu este marit daca ai un anumit DoT pe target(<img src="images/gifs/spell_fire_burnout.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29722&name=incinerate">Incinerate</a> damage este marit daca ai <img src="images/gifs/spell_fire_immolation.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Immolate</a>). Si <img src="images/gifs/spell_shadow_shadowbolt.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=686&name=shadow-bolt">Shadow Bolt</a> si <img src="images/gifs/spell_fire_burnout.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29722&name=incinerate">Incinerate</a> sunt vrajile care aplica <img src="images/gifs/spell_shadow_shadowandflame.gif" alt="Couldn't load the image"><a href="https://www.wow-freakz.com/spells.php?spell=17801&name=shadow-and-flame">Shadow and Flame</a> pe target care mareste sansa de criticala pe target cu 5%.</p>
+				<p><img src="images/gifs/inv_summerfest_firespirit.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=71521&name=hand-of-gul-dan">Hand of Gul'dan</a> - un cooldown important cum am precizat si <a href="index.html#changes">aici</a> si foarte folositor deoarece da refresh la Immolate-ul de pe target daca ai cele 2 talente puse pe <img src="images/gifs/ability_warlock_cremation.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=85104&name=cremation">Cremation</a>.</p>
+				<p>Cooldown-urile au ramas <img src="images/gifs/spell_shadow_demonform.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=47241&name=metamorphosis">Metamorphosis</a>, ca si pe Wrath of the Lich King, plus <img src="images/gifs/spell_warlock_demonsoul.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=77801&name=demon-soul">Demon Soul</a>, <img src="images/gifs/spell_warlock_soulburn.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74434&name=soulburn">Soulburn</a> si unul din cei 2 gardieni <img src="images/gifs/achievement_boss_kiljaedan.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=18540&name=summon-doomguard">Summon Doomguard</a> sau <img src="images/gifs/spell_shadow_summoninfernal.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1122&name=summon-infernal">Summon Infernal</a>.</p>
+				<p>Rotatie Single Target:</p>
+				<p><img src="images/gifs/spell_shadow_summonfelguard.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=30146&name=summon-felguard">Summon Felguard</a>-><img src="images/gifs/spell_shadow_demonform.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=47241&name=metamorphosis">Metamorphosis</a>(with metagear + mastery buffs)->Switch gear + prepot->EnterCombat-><img src="images/gifs/spell_fire_incinerate.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=50589&name=immolation-aura">Immolation Aura</a>->
+				<br>1-2x<img src="images/gifs/spell_fire_burnout.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29722&name=incinerate">Incinerate</a>(apply <img src="images/gifs/spell_shadow_shadowandflame.gif" alt="Couldn't load the image"><a href="https://www.wow-freakz.com/spells.php?spell=17801&name=shadow-and-flame">Shadow and Flame</a> & procs your trinkets)-><img src="images/gifs/spell_warlock_demonsoul.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=77801&name=demon-soul">Demon Soul</a>->
+				<br><img src="images/gifs/spell_warlock_soulburn.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74434&name=soulburn">Soulburn</a>(proc 10% spellpower increase if you have 4pieces of Tier 13)-><img src="images/gifs/spell_shadow_summonfelhunter.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=691&name=summon-felhunter">Summon Felhunter</a>-><img src="images/gifs/warlock_curse_shadow.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1490&name=curse-of-the-elements">Curse of the Elements</a>-><img src="images/gifs/spell_fire_immolation.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Immolate</a>-><img src="images/gifs/spell_shadow_abominationexplosion.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=172&name=corruption">Corruption</a>->
+				<br><img src="images/gifs/spell_shadow_auraofdarkness.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=603&name=bane-of-doom">Bane of Doom</a>-><img src="images/gifs/ability_warlock_shadowflame.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=47897&name=shadowflame">Shadowflame</a>-><img src="images/gifs/inv_summerfest_firespirit.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=71521&name=hand-of-gul-dan">Hand of Gul'dan</a>.
+				<p><img src="images/gifs/spell_shadow_demonform.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=47241&name=metamorphosis">Metamorphosis</a> si <img src="images/gifs/spell_warlock_demonsoul.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=77801&name=demon-soul">Demon Soul</a> sunt 2 cd-uri puternici care trebuies folosite impreuna. De multe ori cd-ul unuia se termina inaintea altuia dar asta nu inseamna ca le dai instant cum s-au dus, ci trebuie sa astepti sa le poti da pe amandoua deodata. Dar daca vedeti ca bossul mai are ~45-30%HP si puteti sa le dati, evitati sa faceti asta si sa asteptati Execute Phase(25% HP).
+				<br>Execute Phase consta in folosirea celor doua cooldown-uri (Meta + Demon Soul) atunci cand aveti toate DoT-urile up pe target dupa puteti incepe a spama Soul Fire datorita cast time-ului redus de catre talentul Decimation. De la 25% la 0% HP fillerul devine Soul Fire iar Incinerate va fi folosit doar cand <img src="images/gifs/ability_warlock_moltencore.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=47247&name=molten-core">Molten Core</a> este procuit. Dar cu toate astea nu uitati sa folositi fillerul odata la ~27 de secunde pentru a avea mereu pe target <img src="images/gifs/spell_shadow_shadowandflame.gif" alt="Couldn't load the image"><a href="https://www.wow-freakz.com/spells.php?spell=17801&name=shadow-and-flame">Shadow and Flame</a>.
+				<br>La warlock mai avem 2 spelluri cu shared cooldown de 10 minute cu durata de activitate de 45 de sec si 1min si 5 secunde daca aveti 2 puncte in talentul <img src="images/gifs/ability_warlock_ancientgrimoire.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=85110&name=ancient-grimoire">Ancient Grimoire</a>. Aceste 2 spelluri sunt <img src="images/gifs/achievement_boss_kiljaedan.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=18540&name=summon-doomguard">Summon Doomguard</a> si <img src="images/gifs/spell_shadow_summoninfernal.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1122&name=summon-infernal">Summon Infernal</a>. Cum am spus ele au shared cooldown de 10 min cea ce inseamna ca pot fi folosite o singura data pe encounter. Acestea sunt folosite cel mai bine cand este burstu cel mai mare(propriile cd + bloodlust). Pentru single target Doomguard este cea mai buna alegere, iar pentru AoE Infernal is the way to go.</p>
+				<p>AoE Damage:</p>
+				<p><img src="images/gifs/spell_shadow_summonfelguard.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=30146&name=summon-felguard">Summon Felguard</a>-><img src="images/gifs/spell_shadow_demonform.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=47241&name=metamorphosis">Metamorphosis</a> + <img src="images/gifs/spell_warlock_demonsoul.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=77801&name=demon-soul">Demon Soul</a>-><img src="images/gifs/inv_summerfest_firespirit.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=71521&name=hand-of-gul-dan">Hand of Gul'dan</a>-><img src="images/gifs/ability_warrior_bladestorm.gif" alt="Couldn't load the image."><a href="https://www.wow-freakz.com/spells.php?spell=89751&name=felstorm">Felstorm</a>-><img src="images/gifs/spell_shadow_summoninfernal.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1122&name=summon-infernal">Summon Infernal</a>-><img src="images/gifs/spell_fire_incinerate.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=50589&name=immolation-aura">Immolation Aura</a>-><img src="images/gifs/spell_fire_incinerate.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1949&name=hellfire">Hellfire</a>.</p>
+				<p><img src="images/gifs/inv_summerfest_firespirit.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=71521&name=hand-of-gul-dan">Hand of Gul'dan</a> este de preferat sa il dati intre channel-urile de Hellfire.</p>
+				<p>Metamorphosis Burst:
+				<br>Exista o "smecherie" la Demonology Warlock pentru a avea un burst de inceput cat mai mare. "Smecheria" consta in folosirea unui set de iteme cu cat mai mult mastery si activand Metamorphosis cu cateva secunde inainte de a da engage unui boss.
+				<br>Deci treaba sta in felul urmator avem setul de iteme de baza si setul de iteme cu mastery salvate in Equipment Manager. Cu cateva secunde inainte de pull (3-5 sec in functie de cat de rapid sunteti) echipati setul cu mastery activati Metamorphosis iar dupa aceea echipati inapoi setul de baza folositi repede si un pre-pot si veti avea un burst urias la inceputul fight-ului.
+				<br>La sectiunea <a href="#meta_gear">Gear</a> am facut o lista cu iteme cu cat mai mult mastery. Cand am facut lista am luat itemele care sunt obtainable pe Freakz(se exclude desigur posibilitatea donari) si nu am pus de 2 ori un item din Dragon Soul(tier sau non-tier). Spre exemplu T13 Hands sunt BiS la gearul de baza dar pot fi folosite si ca hands pentru setul de meta burst(stackate cu socket si enchant cu mastery, in cazul meu la specul de baza ele au haste si 50int socket).
+				<br>Daca aveti Moonwell Chalice acesta trebuie activat dupa ce ati echipat setul cu mastery dar inainte de a activa Metamorphosis pentru acel boost de 1700 Mastery.</p>
+				-->
 			</article>
 		</div>
 		
@@ -121,3 +418,4 @@
 		</footer>
 	</body>
 </html>
+

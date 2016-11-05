@@ -71,17 +71,53 @@
 		<div id="articles">
 			<article id="talents">
 				<h2>Talents</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<img src="images/affliction_talents.png" alt="Couldn't load the image.">
+				<p>In-game code pentru completarea automata a talentelor:</p>
+				<table class="center_table code">
+					<tr>
+						<td>/run t,p,a={1,12,22,33,42,52,62,93,111,123,133,142,151,163,172,181,2,23,3,13,23,}SetPreviewPrimaryTalentTree(t[1],GetActiveTalentGroup())for i=1,#t do a=t[i]if a<9 then p=a else AddPreviewTalentPoints(p,floor(a/10),a%10)end end</td>
+					</tr>
+				</table>
 			</article>
 			
 			<article id="glyphs">
 				<h2>Glyphs</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<img class="center_image" src="images/affliction_glyphs.png" alt="Couldn't load the image.">
+				<h4 class="glyphs_headings"><img src="images/gifs/inv_glyph_primewarlock.jpg" alt="Couldn't load image.">Prime Glyphs:</h4>
+				<ul class="glyphs_ul"> 
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=45779&name=glyph-of-haunt">Glyph of Haunt</a> - mareste bonusul de damage dat de <img src="images/gifs/ability_warlock_haunt.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/cata_spells.php?spell=48181&name=haunt">Haunt</a> cu 3%.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42472&name=glyph-of-unstable-affliction">Glyph of Unstable Affliction</a> - reduce cast time-ul pentru <img src="images/gifs/spell_shadow_unstableaffliction_3.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=30108&name=unstable-affliction">Unstable Affliction</a> cu 0.2 secunde.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42456&name=glyph-of-bane-of-agony">Glyph of Bane of Agony</a> - mareste durata la <img src="images/gifs/spell_shadow_curseofsargeras.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=980&name=bane-of-agony">Bane of Agony</a> cu 4 secunde.</li>
+				</ul>
+				<h4 class="glyphs_headings"><img src="images/gifs/inv_glyph_majorwarlock.jpg" alt="Couldn't load image.">Major Glyphs:</h4>
+				<ul class="glyphs_ul">
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42462&name=glyph-of-healthstone">Glyph of Soul Swap</a> - <img src="images/gifs/ability_warlock_soulswap.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=86121&name=soul-swap">Soul Swap</a> lasa DoT-urile pe target, dar primeste un cooldown de 30 de secunde.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=45785&name=glyph-of-life-tap">Glyph of Shadow Bolt</a> - reduce mana costul la <img src="images/gifs/spell_shadow_shadowbolt.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=686&name=shadow-bolt">Shadow Bolt</a> cu 15%.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=42467&name=glyph-of-shadow-bolt">Glyph of Soulstone</a> - mareste hp-ul cu care este reinviat player-ul de <img src="images/gifs/inv_misc_orb_04.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=5232&name=soulstone">Soulstone</a> cu 40%, un must de cand <img src="images/gifs/inv_misc_orb_04.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/item_finder.php?item=5232&name=soulstone">Soulstone</a> a devenit un combat ress.</li>
+				</ul>
+				<h4 class="glyphs_headings"><img src="images/gifs/inv_glyph_minorwarlock.jpg" alt="Couldn't load image.">Minor Glyphs:</h4>
+				<ul class="glyphs_ul">
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=43389&name=glyph-of-unending-breath">Glyph of Unending Breath</a> - mareste swim speedul cu 20% pe toti care au <img src="images/gifs/spell_shadow_demonbreath.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=5697&name=unending-breath">Unending Breath</a>.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=43394&name=glyph-of-ritual-of-souls">Glyph of Ritual of Souls</a> - reduce mana folosita de <img src="images/gifs/spell_shadow_shadesofdarkness.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=29893&name=ritual-of-souls">Ritual of Souls</a> cu 70%.</li>
+					<li><a href="https://www.wow-freakz.com/item_finder.php?item=43390&name=glyph-of-drain-soul">Glyph of Drain Soul</a> - va da 10% din total mana dupa ce omorati un target care da experienta sau honor cu <img src="images/gifs/spell_shadow_haunting.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=1120&name=drain-soul">Drain Soul</a>.</li>
+				</ul>
+				<p><span id="glyphs_note">NOTE:</span> Glyphele minore sunt optionale!</p>
 			</article>
 			
 			<article id="stats">
 				<h2>Stats</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<p>Haste-ul este un stat important deoarece din Cataclysm nu numai ca reduce global cooldown si casting time-ul la spells ca si pana acuma, dar inloc sa micsoreze timpu dintre tick-uri astfel micsorand durata dot-urilor adauga un extra tick la dot-uri la anumite procente cea ce inseamna un plus de damage in acelas numar de secunde.</p>
+				<p id="haste_rating" class="center_text">1% Haste = 128.05701 Haste rating</p>
+				<p class="center_text"><img src="images/gifs/spell_shadow_unstableaffliction_3.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=30108&name=unstable-affliction">Unstable Affliction</a></p>
+				<img class="center_image" src="images/unstable_affliction_haste_bp.png" alt="Couldn't load image.">
+				<p class="center_text"><img src="images/gifs/spell_shadow_abominationexplosion.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=172&name=corruption">Corruption</a></p>
+				<img class="center_image" src="images/corruption_haste_bp.png" alt="Couldn't load image.">
+				<p class="center_text"><img src="images/gifs/spell_shadow_curseofsargeras.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=980&name=bane-of-agony">Bane of Agony</a></p>
+				<img class="center_image" src="images/bane_of_agony_haste_bp.png" alt="Couldn't load image.">
+				<p class="center_text"><img src="images/gifs/ability_warlock_shadowflame.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=348&name=immolate">Shadowflame</a></p>
+				<img class="center_image" src="images/shadowflame_haste_bp.png" alt="Couldn't load image.">
+				<p>Aceste valori sunt atinse raid buffed(<img src="images/gifs/spell_warlock_focusshadow.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=80398&name=dark-intent">Dark Intent</a> + <img src="images/gifs/spell_nature_moonglow.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=24907&name=moonkin-aura">Moonkin Aura</a>/<img src="images/gifs/spell_shadow_spectralsight.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=49868&name=mind-quickening">Mind Quickening</a>/<img src="images/gifs/spell_shaman_elementaloath.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=51470&name=elemental-oath">Elemental Oath</a>/<img src="images/gifs/spell_nature_slowingtotem.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=3738&name=wrath-of-air-totem">Wrath of Air Totem</a>), iar unele din ele sunt chiar imposibil de atins.</p>
+				<p>Intelect>HitCap(17% - 1742 hit rating)>Haste(30.01% raid buffed)>Crit>Mastery</p>
 			</article>
 			
 			<article id="reforging">
@@ -96,17 +132,66 @@
 			
 			<article id="enchants">
 				<h2>Enchants</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<ul>
+					<li>Head: <img src="images/gifs/spell_fire_masterofelements.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=62367">Arcanum of Hyjal</a></li>
+					<li>Shoulders: <img src="images/gifs/inv_misc_mastersinscription.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=86403&name=felfire-inscription">Felfire Inscription</a> daca aveti Inscription, altfel <img src="images/gifs/inv_misc_gem_bloodstone_02.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=62343">Greater Inscription of Charged Lodestone</a></li>
+					<li>Back: <img src="images/gifs/inv_misc_thread_01.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=75172&name=lightweave-embroidery">Lightweave Embroidery</a> daca aveti Tailoring, altfel <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74240&name=enchant-cloak-greater-intellect">Enchant Cloak - Greater Intellect</a></li>
+					<li>Chest: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74250&name=enchant-chest-peerless-stats">Enchant Chest - Peerless Stats</a></li>
+					<li>Wrists: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=96262&name=enchant-bracer-mighty-intellect">Enchant Bracer - Mighty Intellect</a></li>
+					<li>Hands: <img src="images/gifs/trade_engineering.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=82175&name=synapse-springs">Synapse Springs</a> daca aveti Engineering, altfel <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=52749">Enchant Gloves - Haste</a>.</li>
+					<li>Waist: <img src="images/gifs/inv_belt_83.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=55054">Ebonsteel Belt Buckle</a></li>
+					<li>Legs: <img src="images/gifs/inv_misc_thread_eternium.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=54448">Powerful Enchanted Spellthread</a></li>
+					<li>Feet: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=52750">Enchant Boots - Haste</a></li>
+					<li>Rings: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74217&name=enchant-ring-intellect">Enchant Ring - Intellect</a> daca aveti enchanting.</li>
+					<li>Weapon: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74242&name=enchant-weapon-power-torrent">Enchant Weapon - Power Torrent</a></li>
+					<li>Off-Hand: <img src="images/gifs/trade_engraving.gif" alt="Couldn't load image."><a href="https://www.wow-freakz.com/spells.php?spell=74235&name=enchant-off-hand-superior-intellect">Enchant Off-Hand - Superior Intellect</a></li>
+				</ul>
 			</article>
 			
 			<article id="sockets">
 				<h2>Sockets</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<ul>
+					<li><img src="images/gifs/UI-EmptySocket-Meta.png" alt="Couldn't load image.">Meta:		<img src="images/gifs/inv_misc_metagem_b.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=68780">Burning Shadowspirit Diamond</a></li>
+					<li><img src="images/gifs/UI-EmptySocket-Red.png" alt="Couldn't load image.">Red:		<img src="images/gifs/inv_misc_epicgem_01.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71881">Brilliant Queen's Garnet</a></li>
+					<li><img src="images/gifs/UI-EmptySocket-Yellow.png" alt="Couldn't load image.">Yellow:	<img src="images/gifs/inv_misc_epicgem_04.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71850">Reckless Lava Coral</a></li>
+					<li><img src="images/gifs/UI-EmptySocket-Blue.png" alt="Couldn't load image.">Blue:		<img src="images/gifs/inv_misc_epicgem_05.gif" alt="Couldn't load image."><a href="http://www.wowhead.com/item=71864">Veiled Shadow Spinel</a></li>
+				</ul>
 			</article>
 			
 			<article id="macros">
 				<h2>Macros</h2>
-				<p class="center_text" style="color: green">Comming Soon!</p>
+				<ul>
+					<li>Healthstone increased healing</li>
+					<table class="code">
+						<tr>
+							<td>#showtooltip Healthstone<br>/castsequence Demon Armor, Healthstone, Fel Armor</td>
+						</tr>
+					</table>
+					<li>Felhunter Spell Lock</li>
+					<table class="code">
+						<tr>
+							<td>/cast [pet:felhunter, target=focus, exists] Spell Lock; [pet:felhunter] Spell Lock</td>
+						</tr>
+					</table>
+					<li>Shadow Bite</li>
+					<table class="code">
+						<tr>
+							<td>/petattack [mod:shift, @pettarget]<br>/petattack [nomod]<br>/cast [pet:felhunter, mod:shift, @pettarget] Shadow Bite; [pet:felhunter, nomod] Shadow Bite</td>
+						</tr>
+					</table>
+					<li>Demonic Circle</li>
+					<table class="code">
+						<tr>
+							<td>#showtoolpit Demonic Circle:Teleport<br>/cast [mod:shift] Demonic Circle:Summon; [nomod] Demonic Circle:Teleport</td>
+						</tr>
+					</table>
+					<li>Soul Swap mouseover</li>
+					<table class="code">
+						<tr>
+							<td> /cast [target=mouseover,exists][] Soul Swap</td>
+						</tr>
+					</table>
+				</ul>
 			</article>
 			
 			<article id="rc">
@@ -121,3 +206,4 @@
 		</footer>
 	</body>
 </html>
+

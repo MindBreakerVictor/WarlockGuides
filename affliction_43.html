@@ -46,11 +46,14 @@
 				<li id="pov_videos_nav_li">
 					<a id="pov_videos_nav" class="nav_button" href="videos.html">PoV Videos</a>
 				</li>
+				<li id="artwork_nav_li">
+					<a id="artwork_nav" class="nav_button" href="artwork.html">Artwork</a>
+				</li>
 			</ul>
 		</nav>
 		
 		<header>
-			<a href="index.html"><img src="images/Warlock_crest.png" alt="An error occured while loading the image."></a>
+			<img src="images/Warlock_crest_2.png" alt="An error occured while loading the image." width="250px" height="294px">
 			<h1>Affliction Warlock 4.3 PvE Guide</h1>
 		</header>
 		
@@ -71,9 +74,9 @@
 		<div id="articles">
 			<article id="talents">
 				<h2>Talents</h2>
-				<img src="images/affliction_talents.png" alt="Couldn't load the image.">
+				<img class="talents_img" src="images/affliction_talents.png" alt="Couldn't load the image.">
 				<p>In-game code pentru completarea automata a talentelor:</p>
-				<table class="center_table code">
+				<table class="code">
 					<tr>
 						<td>/run t,p,a={1,12,22,33,42,52,62,93,111,123,133,142,151,163,172,181,2,23,3,13,23,}SetPreviewPrimaryTalentTree(t[1],GetActiveTalentGroup())for i=1,#t do a=t[i]if a<9 then p=a else AddPreviewTalentPoints(p,floor(a/10),a%10)end end</td>
 					</tr>

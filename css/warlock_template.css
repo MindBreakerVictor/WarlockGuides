@@ -15,6 +15,7 @@ header img
 	padding: 0;
 	margin: 0;
 	position: fixed;
+	background-image: url("../images/main_nav_background.jpg");
 }
 
 #main_nav ul li
@@ -26,15 +27,9 @@ header img
 {
 	display: block;
 	width: 120px;
-	background-image: url("../images/main_nav_background.jpg");
 	text-align: center;
 	text-decoration: none;
 	padding: 5px;
-}
-
-.main_nav_dropdown_li, #home_nav_li
-{
-	border-right: 1px solid #bbb;
 }
 
 .nav_button
@@ -44,16 +39,22 @@ header img
 
 .main_nav_dropdown_div
 {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-2em);
+	z-index: -1;
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 	position: absolute;
 	min-width: 100px;
 	box-shadow: 0px 4px 12px #545454;
+	background-color: black;
 }
 
 .main_nav_dropdown_div a
 {
 	display: block;
 	text-align: center;
+	background-image: none;
 }
 
 #affliction_dropdown a
@@ -98,14 +99,25 @@ header img
 	color: #66ccff;
 }
 
+#artwork_nav
+{
+	color: #ffe100;
+}
+
 #affliction_nav_li:hover #affliction_dropdown, 
 #demonology_nav_li:hover #demonology_dropdown, 
 #destruction_nav_li:hover #destruction_dropdown
 {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s;
 }
 
-#pov_videos_nav:hover
+#pov_videos_nav:hover, 
+#home_nav:hover, 
+#artwork_nav:hover
 {
 	color: #f2f2f2;
 }
@@ -196,9 +208,11 @@ header img
 	text-align: center;
 }
 
-#talents
+.talents_img
 {
-	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .code

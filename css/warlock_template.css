@@ -137,7 +137,7 @@ header img:hover
 {
 	list-style-type: none;
 	margin: 0;
-	margin-top: 0.5%;
+	margin-top: 17px;
 	padding: 0;
 	width: 11%;
 	position: fixed;
@@ -240,6 +240,9 @@ header img:hover
 .code
 {
 	overflow: auto;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 3px solid #313131;
 	background-color: #515151;
 }
@@ -268,7 +271,8 @@ header img:hover
 
 .gear_table tr th, .gear_table tr td
 {
-	font-size: 110%;
+	font-style: oblique;
+	font-size: 1.2em;
 	color: orange/*#8A2BE2*/;
 	border-bottom: 1.5px solid blue;
 	border-right: 1.5px solid blue;
@@ -296,7 +300,7 @@ footer
 	color: #ffffff;
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 780px)
 {
 	#main_nav ul li
 	{

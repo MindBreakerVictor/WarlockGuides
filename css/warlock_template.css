@@ -9,6 +9,17 @@ header img
 	margin-top: 2%;
 }
 
+header img:hover
+{
+	animation: crest 3s;
+}
+
+@keyframes crest
+{
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
 #main_nav ul
 {
 	list-style-type: none;
@@ -217,11 +228,7 @@ header img
 
 .code
 {
-	width: 50%;
-}
-
-.code td
-{
+	overflow: auto;
 	border: 3px solid #313131;
 	background-color: #515151;
 }

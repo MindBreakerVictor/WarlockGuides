@@ -5,3 +5,39 @@ body
 	background-attachment: fixed;
 }
 
+img
+{
+	display: block;
+	margin-top: 6%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#artwork_div
+{
+	width: 850px;
+	height: 500px;
+	margin-top: 6%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/artwork_01.png");
+	background-size: 100%;
+	animation: artwork_01 3s infinite;
+}
+
+@keyframes artwork_01
+{
+	0%
+	{
+		opacity: 1;
+	}
+	50%
+	{
+		opacity: 0.5;
+		background-image: url("../images/affliction_background.jpg");
+	}
+	100%{
+		opacity: 1;
+	}
+}
+

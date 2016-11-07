@@ -224,17 +224,6 @@ header img:hover
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
-}
-
-.glyphs_image
-{
-	width: 50%;
-}
-
-.haste_bp_image
-{
-	width: 30%;
 }
 
 .code
@@ -292,15 +281,10 @@ header img:hover
 
 footer
 {
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
 	text-align: center;
 	color: #ffffff;
-}
-
-@media screen and (max-width: 700px)
-{
-	#main_nav ul li
-	{
-		float: none;
-	}
 }
 

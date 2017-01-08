@@ -11,6 +11,9 @@
 		
 		<link href="css/warlock_template.css" rel="stylesheet" type="text/css">
 		<link href="css/index.css" rel="stylesheet" type="text/css">
+
+		<script src="scripts/index.js"></script>
+		<script src="scripts/main_nav.js"></script>
 	</head>
 	
 	<body>
@@ -44,14 +47,14 @@
 					<a id="pov_videos_nav" class="nav_button" href="videos.html">PoV Videos</a>
 				</li>
 				<li id="artwork_nav_li">
-					<a id="artwork_nav" class="nav_button" href="artwork.html">Artwork</a>
+					<a id="artwork_nav" class="nav_button" href="artwork.html" onclick='openArtworkWindow()'>Artwork</a>
 				</li>
 			</ul>
 		</nav>
 		
 		<header>
 			<img src="images/Warlock_crest_2.png" alt="An error occured while loading the image." width="250px" height="294px">
-			<h1>Warlock Guides</h1>
+			<h1 id="warlock_guides_h1">Warlock Guides</h1>
 		</header>
 		
 		<nav id="left_side_nav">

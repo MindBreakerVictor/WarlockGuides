@@ -1,6 +1,4 @@
-window.onload = main;
-
-function main()
+window.onload = function ()
 {
     var mainDiv = document.getElementById("artgallery");
     var childrenArray = Array.from(mainDiv.childNodes);
@@ -32,12 +30,19 @@ function main()
             }
         }
     }
+
+    var artworkCanvasContext = document.getElementById("artwork_canvas").getContext("2d");
+    artworkCanvasContext.font = "30px Arial";
+    artworkCanvasContext.fillStyle = "#ffffff";
+    
+    var hello = "Hello, ";
+    artworkCanvasContext.fillText(hello.concat(localStorage.getItem("name").concat(".")), 10, 50);
 }
 
 function createOverlayImage(src)
 {
     var overlayDiv = document.createElement("div");
-    overlayDiv.style.position = "absolute";
+    overlayDiv.style.position = "fixed";
     overlayDiv.style.left = 0;
     overlayDiv.style.top = 0;
     overlayDiv.style.width = "100%";

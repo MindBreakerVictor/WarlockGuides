@@ -1,12 +1,21 @@
-window.onload = main;
-
-function main()
+window.onload = function ()
 {
-    var name = window.prompt("Enter your name.");
+    if (localStorage.getItem("name") == undefined)
+        localStorage.setItem("name", window.prompt("Enter your name."));
+
     var hello = "Hello, ";
-    window.setTimeout(function() { alert(hello.concat(name)); }, 500);
-    window.setTimeout(alertUTCTime, 2000);
+    window.setTimeout(function()
+    { 
+        alert(hello.concat(localStorage.getItem("name").concat(".")));
+    }, 500);
+
+    window.setTimeout(alertUTCTime, 1000);
     window.setInterval(alternateColor, 10000, "warlock_guides_h1");
+
+    var psParagraph = document.createElement("p");
+    var psTextNode = document.createTextNode("P.S. This section need to be formatted.");
+    psParagraph.appendChild(psTextNode);
+    document.getElementById("cchanges").appendChild(psParagraph);
 }
 
 function alertUTCTime()

@@ -52,7 +52,8 @@ function createOverlayImage(src)
     
     document.body.appendChild(overlayDiv);
 
-    document.getElementById("overlay_div").addEventListener("click", function() {
+    document.getElementById("overlay_div").addEventListener("click", function()
+    {
         this.parentNode.removeChild(this);
     });
 

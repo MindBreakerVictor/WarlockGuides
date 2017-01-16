@@ -20,15 +20,13 @@ window.onload = function ()
 
 function alertUTCTime()
 {
-    var dateAndTime = new Date();
-    alert(dateAndTime.toUTCString());
+    alert(new Date().toUTCString());
 }
 
 function alternateColor(elementId)
 {
-    var element = document.getElementById(elementId);
     var colors = ["#8D38C9", "#FF9900", "#FF0000", "#00E600"];
-    element.style.color = colors[irand(0, 3)];
+    document.getElementById(elementId).style.color = colors[irand(0, 3)];
 }
 
 function irand(min, max)
